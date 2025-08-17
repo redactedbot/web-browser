@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+  <interface>
+    <field id="serverEndpoint" type="string" />
+    <field id="clientApiKey" type="string" />
+    <field id="favorites" type="array" />
+  </interface>
+
+  <children>
+    <Group translation="[0,0]">
+      <Rectangle id="bg" width="1280" height="720" color="0x000000ff" />
+      <Label id="title" translation="[20,20]" width="1240" height="40" font="font:MediumSystemFont" text="Web Renderer" />
+      <Poster id="screenshot" translation="[20,80]" width="640" height="360" uri="" />
+      <Label id="articleText" translation="[20,460]" width="1240" height="240" wrap="true" text="Loading..." />
+      <Label id="fav1" translation="[700,80]" width="560" height="40" text="[favorites[0]]" />
+      <Label id="fav2" translation="[700,140]" width="560" height="40" text="[favorites[1]]" />
+    </Group>
+
+    <!-- Task node -->
+    <RenderTask id="renderTask" />
+  </children>
+
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+</component>
