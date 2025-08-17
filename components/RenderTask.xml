@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="RenderTask" extends="Task">
+  <interface>
+    <field id="serverEndpoint" type="string" />
+    <field id="clientApiKey" type="string" />
+    <field id="targetUrl" type="string" />
+    <field id="response" type="assocarray" />
+  </interface>
+</component>
