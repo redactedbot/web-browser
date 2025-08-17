@@ -1,5 +1,7 @@
 title=WebRendererClient
 major_version=1
 minor_version=0
-build_version=00001
+build_version=1
 mm_icon_focus_hd=pkg:/images/icon.png
+splash_screen_hd=pkg:/images/splash.png
+bs_const=roku_developer_mode=true
